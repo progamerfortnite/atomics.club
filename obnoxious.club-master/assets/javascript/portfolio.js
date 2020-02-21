@@ -41,14 +41,34 @@ GitHub: https://github.com/Lumm1t/obnoxious.club
     $(document).ready(function () {
         var links = [
             {
-                name: 'Atomic',
-                link: '76561197960276740'
+                name: 'AtomicFN',
+                link: 'https://www.youtube.com/channel/UCJJDnmZ0xdZZKTqwvPdT67A?view_as=subscriber'
             },
+                
+            {
+                name: '.Drip',
+                link: 'https://atomicsclub.herokuapp.com/index.html'
+            },
+                
+            {
+                name: 'Zebratic',
+                link: 'https://www.youtube.com/channel/UCmgYRIX_KddbihO25YYV9Tw'
+            },
+
+            {
+                name: 'Meta Btw',
+                link: 'https://atomicsclub.herokuapp.com/index.html'
+            },
+
         ];
          
         for (var i in links) {
             var link = links[i];
-            
+
+            $('#marquee').append('<a href="https://' + link.link + '" target="_BLANK">' + link.name + '</a>');
+
+            link = $('#marquee').children('a').last();
+                
             if (i != links.length - 1) 
                 $('#marquee').append(' <img class="emoticon" src="assets/others/mgh_17.png"> ');
         }
@@ -160,7 +180,7 @@ GitHub: https://github.com/Lumm1t/obnoxious.club
 
                 var usernames = ["user", "dude"];
 
-                writeLine(["Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>", "Welcome back, <i style='color: #0f0'>" +  ((data.ip) ? data.ip : usernames[Math.floor(Math.random()*usernames.length)]) 
+                writeLine(["Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>", "Wasup dawg, <i style='color: #0f0'>" +  ((data.ip) ? data.ip : usernames[Math.floor(Math.random()*usernames.length)]) 
                     + "</i>! By the way, nice to see someone from " + ((data.country_name) ? data.country_name : 'your country') + " here!"], 30, 500, function () {
 
                     if (app.skippedIntro)

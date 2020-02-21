@@ -1,7 +1,3 @@
-// Made by Lummit - https://obnoxious.club/ | https://github.com/Lumm1t/ | Discord: Lummit#0201
-// Credits to expl0it, shellcode.team
-// GitHub: https://github.com/Lumm1t/obnoxious.club
-
 var _app = function () {
     this.id = 0;
     this.videoElement = null;
@@ -54,7 +50,7 @@ var _app = function () {
 
     this.titleChanger = function (text, delay) {
         text = text ||
-            ['AtomicFN', 'ZebraticYT'];
+            ['AtomicFN', 'ZebraticYT','.Drip'];
         delay = delay || 2000;
 
         var counter = 0;
